@@ -19,8 +19,7 @@ int main(int argc, char **argv)
 		if (guess > secretNumber)
 		{
 			cout << "To high!\n\n";
-			
-		}
+		}		
 		else if (guess < secretNumber)
 		{
 			cout << "Too low!\n\n"; 
