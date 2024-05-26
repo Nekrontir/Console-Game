@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include "windows.h"
 using namespace std;
 
 int main(int argc, char **argv)
@@ -19,7 +20,7 @@ int main(int argc, char **argv)
 		if (guess > secretNumber)
 		{
 			cout << "To high!\n\n";
-		}		
+		}
 		else if (guess < secretNumber)
 		{
 			cout << "Too low!\n\n"; 
@@ -29,7 +30,7 @@ int main(int argc, char **argv)
 			cout << "\nThat's it! You got it in " << tries << " guesses!\n";
 		}
 	} while (guess != secretNumber);
-	
+	system ("pause"); 
 	return 0;
 }
 
